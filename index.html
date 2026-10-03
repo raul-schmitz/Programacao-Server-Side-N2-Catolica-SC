@@ -253,12 +253,12 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       </div>
     </div>
     <ul class="tasks">
-      <li><label class="task"><input type="checkbox" data-id="b1-1"><span>Em <code>ConsultaController</code>, trocar <code>var erro = ValidarConsulta(...)</code> por <code>await ValidarConsulta(...)</code> nos dois usos<span class="task-note">Sem o await, erro recebe a Task; como Task nunca é null, o 400 é sempre retornado</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b1-2"><span>Remover <code>private static List&lt;...&gt;</code> e <code>_nextId</code> dos três controllers<span class="task-note">Estado estático compartilhado entre requisições de usuários diferentes</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b1-3"><span>Remover as atribuições <code>.Id = _nextId++</code> antes do <code>Add</code><span class="task-note">Quem gera o Id é o banco; atribuir à mão colide com o auto-incremento</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b1-4"><span>Em <code>GetPacientes</code>, devolver <code>pacientesDTO</code> e não <code>pacientes</code><span class="task-note">Hoje a lista de DTOs é montada, descartada, e o CPF sai na resposta</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b1-5"><span>Remover <code>app.UseAuthorization()</code> do <code>Program.cs</code><span class="task-note">O serviço correspondente nunca foi registrado e o projeto não tem autenticação</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b1-6"><span>Apagar os blocos <code>/*POST ... /*PUT ...*/</code> dos três Models<span class="task-note">Comentário de bloco não aninha em C#: hoje funciona por acidente</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b1-1"><span>Em <code>ConsultaController</code>, trocar <code>var erro = ValidarConsulta(...)</code> por <code>await ValidarConsulta(...)</code> nos dois usos<span class="task-note">Sem o await, erro recebe a Task; como Task nunca é null, o 400 é sempre retornado</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b1-2"><span>Remover <code>private static List&lt;...&gt;</code> e <code>_nextId</code> dos três controllers<span class="task-note">Estado estático compartilhado entre requisições de usuários diferentes</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b1-3"><span>Remover as atribuições <code>.Id = _nextId++</code> antes do <code>Add</code><span class="task-note">Quem gera o Id é o banco; atribuir à mão colide com o auto-incremento</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b1-4"><span>Em <code>GetPacientes</code>, devolver <code>pacientesDTO</code> e não <code>pacientes</code><span class="task-note">Hoje a lista de DTOs é montada, descartada, e o CPF sai na resposta</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b1-5"><span>Remover <code>app.UseAuthorization()</code> do <code>Program.cs</code><span class="task-note">O serviço correspondente nunca foi registrado e o projeto não tem autenticação</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b1-6"><span>Apagar os blocos <code>/*POST ... /*PUT ...*/</code> dos três Models<span class="task-note">Comentário de bloco não aninha em C#: hoje funciona por acidente</span></span></label></li>
     </ul>
   </section>
 
