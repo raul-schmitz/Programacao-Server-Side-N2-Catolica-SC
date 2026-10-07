@@ -406,14 +406,14 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       </div>
     </div>
     <ul class="tasks">
-      <li><label class="task"><input type="checkbox" data-id="b8-1"><span>Trocar entidade por DTO na entrada e na saída dos cinco métodos</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-2"><span>Validar que o paciente informado existe<span class="task-note">Hoje o FindAsync é chamado e o resultado é descartado</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-3"><span>Validar que o médico informado existe</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-4"><span>Implementar a sobreposição de 30 minutos para o médico<span class="task-note">Janela de −30 a +30 minutos; hoje só compara horário exatamente igual, então 10:00 e 10:15 passam</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-5"><span>Implementar a mesma regra de sobreposição para o paciente</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-6"><span>Substituir o <code>PUT</code> por <code>PATCH</code> com <code>ConsultaUpdateDTO</code></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-7"><span>No PATCH, revalidar tudo com os valores finais<span class="task-note">Combinar DTO e entidade com ?? antes de validar, como o enunciado exige quando o paciente ou o médico muda</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b8-8"><span>Passar <code>idIgnorar</code> na validação do PATCH<span class="task-note">Sem isso a consulta entra em conflito consigo mesma e nunca pode ser editada</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-1"><span>Trocar entidade por DTO na entrada e na saída dos cinco métodos</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-2"><span>Validar que o paciente informado existe<span class="task-note">Hoje o FindAsync é chamado e o resultado é descartado</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-3"><span>Validar que o médico informado existe</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-4"><span>Implementar a sobreposição de 30 minutos para o médico<span class="task-note">Janela de −30 a +30 minutos; hoje só compara horário exatamente igual, então 10:00 e 10:15 passam</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-5"><span>Implementar a mesma regra de sobreposição para o paciente</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-6"><span>Substituir o <code>PUT</code> por <code>PATCH</code> com <code>ConsultaUpdateDTO</code></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-7"><span>No PATCH, revalidar tudo com os valores finais<span class="task-note">Combinar DTO e entidade com ?? antes de validar, como o enunciado exige quando o paciente ou o médico muda</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b8-8"><span>Passar <code>idIgnorar</code> na validação do PATCH<span class="task-note">Sem isso a consulta entra em conflito consigo mesma e nunca pode ser editada</span></span></label></li>
     </ul>
   </section>
 
