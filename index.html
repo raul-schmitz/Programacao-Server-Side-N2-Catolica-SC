@@ -340,9 +340,9 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       </div>
     </div>
     <ul class="tasks">
-      <li><label class="task"><input type="checkbox" data-id="b5-1"><span>Criar <code>CpfValidator</code> conferindo os dois dígitos verificadores<span class="task-note">O enunciado pede CPF válido numericamente — tamanho 11 não basta</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b5-2"><span>Rejeitar CPFs de dígitos repetidos, como 111.111.111-11</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b5-3"><span>Criar a constante <code>DuracaoConsultaMinutos = 30</code><span class="task-note">Em vez de espalhar o número 30 pelo ConsultasController</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b5-1"><span>Criar <code>CpfValidator</code> conferindo os dois dígitos verificadores<span class="task-note">O enunciado pede CPF válido numericamente — tamanho 11 não basta</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b5-2"><span>Rejeitar CPFs de dígitos repetidos, como 111.111.111-11</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b5-3"><span>Criar a constante <code>DuracaoConsultaMinutos = 30</code><span class="task-note">Em vez de espalhar o número 30 pelo ConsultasController</span></span></label></li>
     </ul>
   </section>
 
@@ -362,13 +362,13 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       </div>
     </div>
     <ul class="tasks">
-      <li><label class="task"><input type="checkbox" data-id="b6-1"><span>GET e GET by Id devolvendo <code>PacienteReadDTO</code></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b6-1"><span>GET e GET by Id devolvendo <code>PacienteReadDTO</code></span></label></li>
       <li><label class="task"><input type="checkbox" data-id="b6-2"><span>POST recebendo <code>PacienteCreateDTO</code>, com 201 e cabeçalho <code>Location</code></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b6-3"><span>Validar no POST: data de nascimento não futura e CPF numericamente válido</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b6-4"><span>Validar no POST: não existe outro paciente com o mesmo CPF<span class="task-note">409 Conflict é o status mais adequado</span></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b6-5"><span>Substituir o <code>PUT</code> por <code>PATCH</code> com <code>PacienteUpdateDTO</code></span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b6-6"><span>Validar no PATCH: data de nascimento não futura, quando o campo vier preenchido</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b6-7"><span>DELETE bloqueado quando o paciente tiver consultas futuras</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b6-3"><span>Validar no POST: data de nascimento não futura e CPF numericamente válido</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b6-4"><span>Validar no POST: não existe outro paciente com o mesmo CPF<span class="task-note">409 Conflict é o status mais adequado</span></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b6-5"><span>Substituir o <code>PUT</code> por <code>PATCH</code> com <code>PacienteUpdateDTO</code></span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b6-6"><span>Validar no PATCH: data de nascimento não futura, quando o campo vier preenchido</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b6-7"><span>DELETE bloqueado quando o paciente tiver consultas futuras</span></label></li>
     </ul>
   </section>
 
