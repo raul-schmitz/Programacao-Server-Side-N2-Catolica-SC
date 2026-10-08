@@ -280,7 +280,7 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       <li><label class="task"><input type="checkbox" checked="true" data-id="b2-2"><span>Renomear <code>Consulta.Data</code> para <code>Consulta.DataHora</code><span class="task-note">O enunciado define a estrutura como { Id, PacienteId, MedicoId, DataHora }</span></span></label></li>
       <li><label class="task"><input type="checkbox" checked="true" data-id="b2-3"><span>Gerar a migration: <code>dotnet ef migrations add RenomeiaDataParaDataHora</code></span></label></li>
       <li><label class="task"><input type="checkbox" checked="true" data-id="b2-4"><span>Aplicar com <code>dotnet ef database update</code> e confirmar a coluna no banco</span></label></li>
-      <li><label class="task" style="color: yellow;"><input type="checkbox" data-id="b2-5"><span>(AVALIAR ERRO 405) Conferir no Postman que as rotas antigas <code>/api/paciente</code> não respondem mais</span></label></li>
+      <li><label class="task" style="color: yellow;"><input type="checkbox" checked="true" data-id="b2-5"><span>(AVALIAR ERRO 405) Conferir no Postman que as rotas antigas <code>/api/paciente</code> não respondem mais</span></label></li>
     </ul>
   </section>
 
@@ -322,7 +322,7 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
       <li><label class="task"><input type="checkbox" checked="true" data-id="b4-1"><span>Renomear em <code>PacienteMapper</code>: <code>ToModel</code> → <code>ToEntity</code> e <code>ToDTO</code> → <code>ToReadDTO</code><span class="task-note">Alinha o nome com a intenção e com os outros dois mappers</span></span></label></li>
       <li><label class="task"><input type="checkbox" checked="true" data-id="b4-2"><span>Acrescentar <code>ApplyUpdate</code> ao <code>PacienteMapper</code><span class="task-note">Um if (campo is not null) por propriedade — é a regra do PATCH escrita em código</span></span></label></li>
       <li><label class="task"><input type="checkbox" checked="true" data-id="b4-3"><span>Criar <code>MedicoMapper</code> com os três métodos</span></label></li>
-      <li><label class="task"><input type="checkbox" data-id="b4-4"><span>Criar <code>ConsultaMapper</code> com os três métodos</span></label></li>
+      <li><label class="task"><input type="checkbox" checked="true" data-id="b4-4"><span>Criar <code>ConsultaMapper</code> com os três métodos</span></label></li>
       <li><label class="task"><input type="checkbox" checked="true" data-id="b4-5"><span>Conferir: <code>ToEntity</code> não copia <code>Id</code>; <code>ToReadDTO</code> do paciente não copia <code>Cpf</code></span></label></li>
     </ul>
   </section>
